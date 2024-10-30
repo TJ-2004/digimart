@@ -16,12 +16,12 @@ const start = async () => {
   app.use((req, res) => nextHandler(req, res));
 
   nextApp.prepare().then(() => {
-    payload.logger.info("Next.JS Started");
+    // payload.logger.info("Next.JS Started");
 
     app.listen(PORT, async () => {
-      payload.logger.info(
-        `Next.JS App URL: ${process.env.NEXT_PUBLIC_SERVER_URL}`
-      );
+      // payload.logger.info(
+      //   `Next.JS App URL: ${process.env.NEXT_PUBLIC_SERVER_URL}`
+      // );
     });
   });
 };
